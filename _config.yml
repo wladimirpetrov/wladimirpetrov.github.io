@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Vladimir Petrov / Site Title"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Vladimir Petrov"
 description              : &description "personal description"
 url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,17 +24,17 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Vladimir Petrov"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  pronouns         : "he/his"  
+  bio              : "PhD student specializing in robotics, autonomous navigation, trajectory optimization and ML-driven algorithms, with prior industry experience designing and building robotic systems."
+  location         : "Iowa City"
+  employer         : "The University of Iowa"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "vladimir-petrov@uiowa.edu" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=i4HX0CEAAAAJ&hl=en"
   impactstory      : # URL
   orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
