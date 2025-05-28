@@ -16,8 +16,7 @@ v.petrov.18.02.94@gmail.com
 
 Skills
 ======
-* Robotics, Machine Learning (TensorFlow), Optimization, Motion Planning & Controls, Autonomous Navigation, Path Planning, SLAM, Multi-robot Coordination
-* ML trained: Transformers, LSTM, RBFNN
+* Robotics, Machine Learning (TensorFlow: Transformers, LSTM, RBFNN), Optimization, Motion Planning & Controls, Autonomous Navigation, Path Planning, SLAM, Multi-robot Coordination
 * ROS & ROS2, C++ & Python, Simulink, MATLAB, Gazebo
 * SolidWorks, Siemens NX + Teamcenter, Autodesk Inventor, ANSYS
 
