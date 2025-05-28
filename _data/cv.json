@@ -1,152 +1,135 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Vladimir Petrov",
+    "email": "v.petrov.18.02.94@gmail.com",
+    "phone": "(319)512-0066",
+    "website": "https://wladimirpetrov.github.io/",
+    "summary": "PhD Student in Mechanical Engineering at the University of Iowa, focusing on robotics, machine learning, and autonomous systems.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Iowa City",
       "countryCode": "US",
-      "region": ""
+      "region": "IA"
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=i4HX0CEAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0009-0005-8041-3079"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "wladimirpetrov",
+        "url": "https://github.com/wladimirpetrov"
       }
     ]
   },
-  "work": [],
-  "education": [
+  "work": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "company": "Mitsubishi Electric Research Laboratories (MERL)",
+      "position": "Robotics Engineer Intern",
+      "startDate": "2025-01",
+      "endDate": "2025-04",
+      "summary": "Developed and implemented trajectory generation and tracking algorithms for coordinated flights of multiple Crazyflie drones in constrained environments using ROS2 and CrazySwarm2; employed SLAM Toolbox for independent drone localization; merged 2D maps into 3D point clouds; validated algorithms with RViz2."
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "company": "University of Iowa, Cooperative Autonomous Systems Lab",
+      "position": "Research Assistant",
+      "startDate": "2023-01",
+      "endDate": "",
+      "summary": "Implement control and learning algorithms for AUVs and UAVs, including PID, LQR, MPC, NMPC, L1 adaptive control, and RBFNN, LSTM, Transformer with TensorFlow; conducted trajectory optimization, path planning, obstacle avoidance, and SLAM using C++, Python, Gazebo, Simulink, and MATLAB; authored publications AUV and UAV controls."
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "company": "Original-group PJSC, Moscow",
+      "position": "Chief of Mechanical Engineering Team",
+      "startDate": "2020-01",
+      "endDate": "2022-01",
+      "summary": "Led a team of 24 design engineers in R&D of Delta, Articulated, Cartesian, SCARA, and Polar robots; managed CAD development in Autodesk Inventor and Siemens NX; performed motion, statics, dynamics, stress, and deflection simulations in ANSYS."
+    },
+    {
+      "company": "Techprom LLC, Volzhsky",
+      "position": "Mechanical Design Engineer",
+      "startDate": "2018-03",
+      "endDate": "2019-08",
+      "summary": "Designed Cartesian/Gantry and Delta robots; created CAD models in Solidworks; performed simulations and calculations in ANSYS and Simulationx."
+    },
+    {
+      "company": "Severstal-ropes PJSC, Volgograd",
+      "position": "Mechanical Design Engineer",
+      "startDate": "2016-03",
+      "endDate": "2018-03",
+      "summary": "Developed Delta and Articulated robots; modeled in Solidworks and Creo; conducted simulations in Simulationx."
     }
   ],
-  "skills": [],
-  "languages": [],
+  "education": [
+    {
+      "institution": "Volgograd State University",
+      "area": "Engineering",
+      "studyType": "Master of Engineering",
+      "startDate": "2010-09",
+      "endDate": "2015-06",
+      "gpa": "3.96",
+      "courses": [],
+      "summary": "Thesis: Development of diesel fuel system; Activities: Student council, Local charity organization"
+    },
+    {
+      "institution": "University of Iowa",
+      "area": "Mechanical Engineering",
+      "studyType": "PhD Student",
+      "startDate": "2023-01",
+      "endDate": "",
+      "gpa": "3.95",
+      "courses": [],
+      "summary": "Cooperative Autonomous Systems Lab"
+    }
+  ],
+  "skills": [
+    "Robotics",
+    "Machine Learning (TensorFlow)",
+    "Optimization",
+    "Motion Planning & Controls",
+    "Autonomous Navigation",
+    "Path Planning",
+    "SLAM",
+    "Multi-robot Coordination",
+    "ROS & ROS2",
+    "C++ & Python",
+    "Simulink",
+    "MATLAB",
+    "Gazebo",
+    "Solidworks",
+    "Siemens NX",
+    "Teamcenter",
+    "Autodesk Inventor",
+    "ANSYS"
+  ],
+  "languages": ["English", "Russian"],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Autopilot System for Depth and Pitch Control in AUVs: Navigating Near-Surface Waves and Disturbances",
+      "publisher": "IFAC",
+      "releaseDate": "",
+      "website": "https://www.sciencedirect.com/science/article/pii/S2405896324018111",
+      "summary": ""
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "AUV Autopilot System for Controlling Depth and Pitch: Maneuvering Through Near-Surface Waves and Environmental Disturbances",
+      "publisher": "",
+      "releaseDate": "",
+      "website": "https://www.sciencedirect.com/science/article/pii/S0029801824032487",
+      "summary": ""
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }
+
