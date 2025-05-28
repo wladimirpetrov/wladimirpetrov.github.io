@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Vladimir Petrov"
   pronouns         : "he/his"  
-  bio              : "PhD student specializing in robotics, autonomous navigation, trajectory optimization and ML-driven algorithms, with prior industry experience designing and building robotic systems."
+  bio              : "PhD student specializing in robotics, autonomous navigation, trajectory optimization and ML-driven control algorithms, with prior industry experience designing and building robotic systems."
   location         : "Iowa City"
   employer         : "The University of Iowa"
   uri              : # URL
