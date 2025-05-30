@@ -69,29 +69,16 @@ Honors & Awards
 
 Publications
 ======
-<ul>
-{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}
-</ul>
+* **Autopilot System for Depth and Pitch Control in Underwater Vehicles: Navigating Near-Surface Waves and Disturbances**
+  V. Petrov, G. MacLin, V. Cichella
+  IFAC Conference
+  [ScienceDirect link](https://www.sciencedirect.com/science/article/pii/S2405896324018111)
 
-Talks
-======
-<ul>
-{% for post in site.talks reversed %}
-  {% include archive-single-talk-cv.html %}
-{% endfor %}
-</ul>
+* **Underwater Vehicle Autopilot System for Controlling Depth and Pitch: Maneuvering Through Near-Surface Waves and Environmental Disturbances**
+  V. Petrov, G. MacLin, V. Cichella
+  Ocean Engineering Journal
+  [ScienceDirect link](https://www.sciencedirect.com/science/article/pii/S0029801824032487)
 
-Teaching
-======
-<ul>
-{% for post in site.teaching reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}
-</ul>
 
-Service and Leadership
-======
-* Currently signed in to 43 different Slack teams
+
 
