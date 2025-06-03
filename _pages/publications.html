@@ -11,26 +11,37 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<h2>Published Works</h2>
+<hr />
+<ul>
+  <li>
+    <strong>Autopilot System for Depth and Pitch Control in Underwater Vehicles: Navigating Near-Surface Waves and Disturbances</strong><br />
+    V. Petrov, G. MacLin, V. Cichella<br />
+    <em>IFAC Conference</em><br />
+    <a href="https://www.sciencedirect.com/science/article/pii/S2405896324018111" target="_blank">View on ScienceDirect</a>
+  </li>
+  <li>
+    <strong>Underwater Vehicle Autopilot System for Controlling Depth and Pitch: Maneuvering Through Near-Surface Waves and Environmental Disturbances</strong><br />
+    V. Petrov, G. MacLin, V. Cichella<br />
+    <em>Ocean Engineering Journal</em><br />
+    <a href="https://www.sciencedirect.com/science/article/pii/S0029801824032487" target="_blank">View on ScienceDirect</a>
+  </li>
+</ul>
 
-
+<h2>Works in Progress</h2>
+<hr />
+<ul>
+  <li>
+    <strong>ML & TensorFlow Controls</strong><br />
+    Ongoing development of machine‐learning–based control algorithms (Transformers, LSTM, RBFNN) for AUVs and UAVs using TensorFlow.
+  </li>
+  <li>
+    <strong>MERL Path Planning</strong><br />
+    Submission in preparation: trajectory generation and path‐planning algorithms for Crazyflie swarms, developed under MERL internship.
+  </li>
+  <li>
+    <strong>MPC BeBOT AUV</strong><br />
+    Ongoing research on Model Predictive Control for AUV trajectory optimization using the BeBOT framework.
+  </li>
+</ul>
 
