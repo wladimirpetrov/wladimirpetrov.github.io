@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Vladimir Petrov"
+title: "About me"
 author_profile: true
 ---
 
