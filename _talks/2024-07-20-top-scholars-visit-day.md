@@ -9,3 +9,8 @@ location: "University of Iowa, Iowa City, IA, USA"
 ---
 
 Presented robotics research and laboratory demonstrations for visiting high school students as part of the University of Iowa Top Scholars Visit Day. The demonstration introduced autonomous systems, robotics experiments, and the role of undergraduate students in robotics research.
+
+<figure>
+  <img src="/images/talks/2024_pic.jpeg" alt="Robotics lab demonstration for Top Scholars Visit Day">
+  <figcaption>Robotics lab demonstration for Top Scholars Visit Day, July 2024.</figcaption>
+</figure>
