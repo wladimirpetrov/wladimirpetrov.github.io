@@ -1,0 +1,224 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:04.618
+The vehicle must reach a commanded depth
+and heading while respecting the
+
+00:00:04.618 --> 00:00:06.175
+limits of its actuators.
+
+00:00:06.175 --> 00:00:10.410
+The side view shows depth and pitch; the
+top view shows heading.
+
+00:00:10.410 --> 00:00:13.759
+The study considers a nonlinear underwater
+vehicle controlled using reduced,
+
+00:00:13.759 --> 00:00:14.981
+linearized prediction models.
+
+00:00:18.600 --> 00:00:22.609
+A linearized model makes repeated
+optimization practical, but it does not
+
+00:00:22.609 --> 00:00:25.032
+capture every nonlinear effect or
+coupling.
+
+00:00:25.032 --> 00:00:29.041
+In the studied baseline, this mismatch
+produces persistent depth and heading
+
+00:00:29.041 --> 00:00:29.643
+errors.
+
+00:00:29.643 --> 00:00:34.016
+This is a limitation of this baseline
+formulation, not of every possible
+
+00:00:34.016 --> 00:00:34.982
+predictive controller.
+
+00:00:36.600 --> 00:00:40.650
+The adaptive reference layer adjusts the
+depth and heading references supplied
+
+00:00:40.650 --> 00:00:42.363
+to model predictive control.
+
+00:00:42.363 --> 00:00:45.676
+The predictive controller computes control
+inputs while incorporating state,
+
+00:00:45.676 --> 00:00:47.389
+actuator, and rate limits.
+
+00:00:47.389 --> 00:00:51.071
+Allocation converts the virtual control
+channels into commands for the
+
+00:00:51.071 --> 00:00:52.415
+physical control surfaces.
+
+00:00:54.600 --> 00:00:59.572
+Each actuator has a permitted range and a
+limit on how quickly its command can
+
+00:00:59.572 --> 00:01:00.118
+change.
+
+00:01:00.118 --> 00:01:03.648
+The four tail planes combine vertical and
+horizontal control demands.
+
+00:01:03.648 --> 00:01:07.294
+The optimization accounts for their
+allocated commands, so a feasible virtual
+
+00:01:07.294 --> 00:01:10.161
+input must also respect the physical
+actuator bounds.
+
+00:01:12.600 --> 00:01:16.342
+Conventional model predictive control
+usually optimizes over a finite horizon.
+
+00:01:16.342 --> 00:01:20.786
+A short prediction window may end before
+the vehicle reaches its target.
+
+00:01:20.786 --> 00:01:25.003
+Here, an infinite horizon represents the
+full approach from the current state
+
+00:01:25.003 --> 00:01:27.690
+to the commanded final target, including
+settling.
+
+00:01:30.600 --> 00:01:32.853
+Following the infinite-horizon
+domain-transformation approach of Fahroo
+
+00:01:32.853 --> 00:01:37.360
+and Ross, we map physical time onto the
+interval from zero to one, excluding
+
+00:01:37.360 --> 00:01:37.891
+one.
+
+00:01:37.891 --> 00:01:41.641
+In our normalization, time equals tau
+divided by one minus tau.
+
+00:01:41.641 --> 00:01:45.181
+The transformed optimal control problem is
+still continuous in time; this
+
+00:01:45.181 --> 00:01:47.000
+mapping is not yet discretization.
+
+00:01:48.600 --> 00:01:52.914
+Next, we choose approximation degree N and
+represent states and inputs with
+
+00:01:52.914 --> 00:01:53.867
+Bernstein polynomials.
+
+00:01:53.867 --> 00:01:55.898
+Their coefficients become optimization
+variables.
+
+00:01:55.898 --> 00:01:59.493
+Transcribing the cost, dynamics, and
+constraints produces a finite nonlinear
+
+00:01:59.493 --> 00:02:00.086
+program.
+
+00:02:00.086 --> 00:02:03.682
+Solving it determines the coefficients,
+and therefore the represented state
+
+00:02:03.682 --> 00:02:04.994
+and input trajectories.
+
+00:02:06.600 --> 00:02:09.761
+Bernstein basis functions are nonnegative
+and sum to one.
+
+00:02:09.761 --> 00:02:14.020
+The curve therefore stays inside the
+convex hull of its control points, even
+
+00:02:14.020 --> 00:02:15.871
+at a small degree N.
+
+00:02:15.871 --> 00:02:19.688
+Coefficient bounds in a convex admissible
+set bound the represented curve.
+
+00:02:19.688 --> 00:02:21.866
+Approximation accuracy remains a separate
+question.
+
+00:02:24.600 --> 00:02:29.546
+At each update, the controller uses the
+latest measured state to solve a new
+
+00:02:29.546 --> 00:02:30.836
+constrained prediction problem.
+
+00:02:30.836 --> 00:02:34.369
+It applies the current control input,
+receives fresh measurements, and
+
+00:02:34.369 --> 00:02:34.952
+repeats.
+
+00:02:34.952 --> 00:02:39.192
+The adaptive reference layer adjusts the
+targets used by this same predictive
+
+00:02:39.192 --> 00:02:40.128
+control structure.
+
+00:02:42.600 --> 00:02:45.948
+The manuscript compares predictive control
+alone with the same controller
+
+00:02:45.948 --> 00:02:47.839
+assisted by adaptive reference management.
+
+00:02:47.839 --> 00:02:51.522
+Model, costs, allocation, and constraints
+are retained to isolate the added
+
+00:02:51.522 --> 00:02:52.074
+layer.
+
+00:02:52.074 --> 00:02:55.087
+The reported simulations reduce
+steady-state depth and heading errors
+
+00:02:55.087 --> 00:02:58.987
+while respecting actuator magnitude and
+rate limits in the tested cases.
+
+00:03:00.600 --> 00:03:04.973
+The reported study uses a nonlinear
+simulation plant at two forward speeds,
+
+00:03:04.973 --> 00:03:06.667
+with calm-water test conditions.
+
+00:03:06.667 --> 00:03:09.819
+These animations illustrate the
+architecture and constraint geometry.
+
+00:03:09.819 --> 00:03:14.920
+They are not a replay of the simulation
+data, and they do not establish
+
+00:03:14.920 --> 00:03:16.979
+performance in arbitrary wave conditions.

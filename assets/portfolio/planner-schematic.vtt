@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.300 --> 00:00:03.888
+The drone follows a planned route around obstacles toward the green target.
+
+00:00:06.600 --> 00:00:13.387
+The blue path is repeatedly recomputed from the current position. Yellow records the motion already completed.
+
+00:00:14.200 --> 00:00:19.559
+When the commanded target changes, the planner updates the route while respecting the surrounding obstacles.
+
+00:00:22.000 --> 00:00:27.561
+The drone approaches the new target. This is a conceptual illustration of replanning.

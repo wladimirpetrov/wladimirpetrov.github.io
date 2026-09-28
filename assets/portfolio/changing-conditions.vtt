@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.250 --> 00:00:04.438
+In nominal conditions, the refreshed path leads toward the commanded target.
+
+00:00:05.150 --> 00:00:08.601
+Airflow pushes the drone sideways, creating a position error.
+
+00:00:10.150 --> 00:00:12.720
+Added mass causes a further vertical error.
+
+00:00:14.150 --> 00:00:20.127
+A virtual target moves. The path is now repeatedly computed toward that virtual target.
+
+00:00:21.100 --> 00:00:26.392
+As it stabilizes, the drone converges to the original green command, despite the disturbances.

@@ -1,0 +1,153 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:05.129
+An underwater vehicle must follow a depth
+command close to the surface.
+
+00:00:05.129 --> 00:00:09.067
+Waves disturb its motion, while uncertain
+hydrodynamics can shift its average
+
+00:00:09.067 --> 00:00:09.658
+depth.
+
+00:00:09.658 --> 00:00:14.313
+The aim is accurate mean tracking without
+asking the actuators to fight every
+
+00:00:14.313 --> 00:00:14.903
+wave.
+
+00:00:18.600 --> 00:00:23.359
+With a nominal regulator, the vehicle can
+remain offset from the commanded
+
+00:00:23.359 --> 00:00:24.014
+depth.
+
+00:00:24.014 --> 00:00:28.773
+At the same time, the control surfaces may
+react repeatedly to wave-driven
+
+00:00:28.773 --> 00:00:29.428
+motion.
+
+00:00:29.428 --> 00:00:33.394
+The two plots distinguish a persistent
+tracking error from unnecessary
+
+00:00:33.394 --> 00:00:34.841
+high-frequency control activity.
+
+00:00:36.600 --> 00:00:40.182
+The commanded depth enters an adaptive
+reference layer.
+
+00:00:40.182 --> 00:00:45.007
+The LQR autopilot follows that adjusted
+reference and manages the actuators.
+
+00:00:45.007 --> 00:00:47.347
+Measurements return to both layers.
+
+00:00:47.347 --> 00:00:51.488
+The adaptive layer addresses slow
+uncertainty, while the regulator shapes
+
+00:00:51.488 --> 00:00:53.000
+the vehicle response.
+
+00:00:54.600 --> 00:00:59.085
+The regulator is designed using an
+augmented model with frequency weighting.
+
+00:00:59.085 --> 00:01:03.185
+Control activity around the wave frequency
+receives an additional penalty.
+
+00:01:03.185 --> 00:01:06.130
+This is built into the LQR design.
+
+00:01:06.130 --> 00:01:11.000
+It is not simply a filter added after an
+already designed controller.
+
+00:01:12.600 --> 00:01:16.871
+The adaptive layer estimates the effect of
+uncertainty and changes the
+
+00:01:16.871 --> 00:01:19.065
+reference supplied to the autopilot.
+
+00:01:19.065 --> 00:01:21.258
+The original command stays fixed.
+
+00:01:21.258 --> 00:01:25.530
+As the internal reference adjusts, the
+mean vehicle depth approaches the
+
+00:01:25.530 --> 00:01:28.500
+command, while residual wave-driven motion
+may remain.
+
+00:01:30.600 --> 00:01:33.839
+A new depth command requires a real
+maneuver.
+
+00:01:33.839 --> 00:01:38.707
+Tail planes, the sail plane, and the hover
+tank contribute according to the
+
+00:01:38.707 --> 00:01:39.699
+control allocation.
+
+00:01:39.699 --> 00:01:43.444
+The desired outcome is reduced rapid
+actuator motion, not motionless
+
+00:01:43.444 --> 00:01:46.309
+actuators: they still respond to slower
+changes.
+
+00:01:48.600 --> 00:01:51.373
+Compare the same maneuver in three
+configurations.
+
+00:01:51.373 --> 00:01:54.508
+Nominal LQR can exhibit offset and
+wave-frequency activity.
+
+00:01:54.508 --> 00:01:57.280
+Frequency shaping reduces the rapid
+control oscillations.
+
+00:01:57.280 --> 00:02:00.778
+Adding adaptive reference management
+addresses the remaining mean error.
+
+00:02:00.778 --> 00:02:04.402
+These animation traces explain the
+mechanisms; they are not numerical
+
+00:02:04.402 --> 00:02:05.000
+results.
+
+00:02:06.600 --> 00:02:11.320
+The published work evaluates the approach
+with a Joubert BB2 simulation model.
+
+00:02:11.320 --> 00:02:14.679
+Its central idea is a division of
+responsibilities: frequency-shaped
+
+00:02:14.679 --> 00:02:17.664
+regulation manages wave-related actuator
+activity, and adaptive augmentation
+
+00:02:17.664 --> 00:02:19.772
+addresses slow disturbances and
+uncertainty.
+
+00:02:19.772 --> 00:02:23.000
+Quantitative results are available in the
+linked papers.

@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00:00.600 --> 00:00:04.585
+Adaptive support can compensate for model
+mismatch while the vehicle operates.
+
+00:00:04.585 --> 00:00:09.031
+The next question is whether the system
+can learn a reusable description of
+
+00:00:09.031 --> 00:00:09.937
+that mismatch.
+
+00:00:09.937 --> 00:00:13.699
+The objective is to improve prediction and
+reduce reliance on continuous
+
+00:00:13.699 --> 00:00:17.000
+adaptive compensation, rather than claim
+an unmeasured energy saving.
+
+00:00:18.600 --> 00:00:22.196
+Model predictive control uses linearized
+dynamics to predict the vehicle
+
+00:00:22.196 --> 00:00:22.790
+response.
+
+00:00:22.790 --> 00:00:25.901
+Measurements reveal effects that this
+nominal model misses.
+
+00:00:25.901 --> 00:00:29.497
+The gap between predicted and observed
+dynamics supplies information for
+
+00:00:29.497 --> 00:00:30.091
+learning.
+
+00:00:30.091 --> 00:00:34.407
+The network aims to describe that
+residual, rather than replace the entire
+
+00:00:34.407 --> 00:00:35.000
+controller.
+
+00:00:36.600 --> 00:00:39.655
+Initially, adaptive reference management
+and predictive control operate
+
+00:00:39.655 --> 00:00:40.285
+together.
+
+00:00:40.285 --> 00:00:44.103
+As the underwater vehicle follows
+commands, measurements and applied inputs
+
+00:00:44.103 --> 00:00:45.497
+provide learning data.
+
+00:00:45.497 --> 00:00:49.697
+The adaptive layer remains active during
+this stage, helping control the
+
+00:00:49.697 --> 00:00:53.000
+vehicle while the network learns from its
+experience.
+
+00:00:54.600 --> 00:00:58.269
+The learning network estimates a
+correction to the nominal dynamics.
+
+00:00:58.269 --> 00:01:01.939
+That correction is intended for use inside
+the predictive model.
+
+00:01:01.939 --> 00:01:05.953
+It is not a separate actuator command
+added to the output.
+
+00:01:05.953 --> 00:01:10.087
+The scene shows the intended reduction of
+model mismatch, not a measured
+
+00:01:10.087 --> 00:01:11.000
+training curve.
+
+00:01:12.600 --> 00:01:15.728
+Learning alone is not enough to justify a
+handover.
+
+00:01:15.728 --> 00:01:19.617
+The correction must be checked on relevant
+conditions, and its effect on
+
+00:01:19.617 --> 00:01:21.772
+tracking and constraints must be assessed.
+
+00:01:21.772 --> 00:01:25.224
+Adaptive support stays available until
+those checks justify the transition.
+
+00:01:25.224 --> 00:01:29.000
+A training loss by itself is not proof of
+closed-loop reliability.
+
+00:01:30.600 --> 00:01:33.701
+After validation, the intended transition
+disables the adaptive reference
+
+00:01:33.701 --> 00:01:34.269
+contribution.
+
+00:01:34.269 --> 00:01:37.594
+The learned dynamics correction remains
+inside model predictive control.
+
+00:01:37.594 --> 00:01:40.574
+The optimization structure and actuator
+limits are retained.
+
+00:01:40.574 --> 00:01:45.053
+This is the research handover being
+investigated, not a claim that the network
+
+00:01:45.053 --> 00:01:47.000
+has learned every possible condition.
+
+00:01:48.600 --> 00:01:52.348
+A new depth and heading command tests the
+post-handover configuration.
+
+00:01:52.348 --> 00:01:56.096
+Predictive control uses the nominal model
+plus the learned correction.
+
+00:01:56.096 --> 00:01:59.264
+Tracking, constraint compliance, and
+sensitivity to unfamiliar conditions must
+
+00:01:59.264 --> 00:02:00.548
+all be evaluated.
+
+00:02:00.548 --> 00:02:04.419
+The motion here illustrates the intended
+behavior rather than a validated
+
+00:02:04.419 --> 00:02:05.000
+experiment.
+
+00:02:06.600 --> 00:02:10.526
+The expected value is retained model
+knowledge and less dependence on
+
+00:02:10.526 --> 00:02:12.899
+continuous adaptive correction within
+validated conditions.
+
+00:02:12.899 --> 00:02:16.469
+Whether this also saves computation or
+electrical energy requires measurement:
+
+00:02:16.469 --> 00:02:19.913
+network inference and optimization have
+costs of their own.
+
+00:02:19.913 --> 00:02:23.000
+This project remains a research concept
+under development.
