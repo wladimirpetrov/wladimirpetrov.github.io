@@ -81,6 +81,11 @@ Honors & Awards
 Publications
 ======
 
+* **Adaptive reference management and model predictive control for near-surface depth–heading control of autonomous underwater vehicles**<br />
+  V. Petrov, G. MacLin, V. Cichella<br />
+  Ocean Engineering, 368 (2026), 128400<br />
+  [Paper DOI](https://doi.org/10.1016/j.oceaneng.2026.128400) · [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0029801826042344) · [Project and video](/portfolio/phd/depth-heading/)
+
 * **Autopilot System for Depth and Pitch Control in Underwater Vehicles: Navigating Near-Surface Waves and Disturbances**  
   V. Petrov, G. MacLin, V. Cichella  
   IFAC Conference  
